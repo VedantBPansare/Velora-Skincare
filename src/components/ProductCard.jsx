@@ -3,6 +3,26 @@ import { addToCart } from "../utils/cart";
 
 function ProductCard({ product }) {
     function handleAddToCart() {
+        const isLoggedIn =
+            localStorage.getItem("veloraLoggedIn") === "true";
+
+        if (!isLoggedIn) {
+            const savedUser =
+                localStorage.getItem("veloraUser");
+
+            if (savedUser) {
+                alert(
+                    "Please login to add products to your cart."
+                );
+            } else {
+                alert(
+                    "Please create an account and login to add products to your cart."
+                );
+            }
+
+            return;
+        }
+
         addToCart(product);
 
         alert(
