@@ -142,7 +142,7 @@ const products = [
         name: "Velvet Hydration Cream",
         category: "Moisturizers",
         price: 649,
-        image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=900",
+        image: "https://loveselfbeauty.com/cdn/shop/files/body_and_skin_hydration_cream.png?v=1740483755&width=1445",
         description:
             "A richer moisturizer with a smooth texture for a comfortable and nourishing skincare step.",
         ingredients:
@@ -160,7 +160,7 @@ const products = [
         name: "Lightweight Water Cream",
         category: "Moisturizers",
         price: 629,
-        image: "https://images.unsplash.com/photo-1570194065650-d99fb4abbd6f?w=900",
+        image: "https://m.media-amazon.com/images/I/7142t-LLkcL._AC_UF1000,1000_QL80_.jpg",
         description:
             "A lightweight water-cream texture made for a fresh finish and easy everyday layering.",
         ingredients:
@@ -218,7 +218,7 @@ const products = [
         name: "Overnight Recovery Mask",
         category: "Face Care",
         price: 799,
-        image: "https://images.unsplash.com/photo-1570194065650-d99fb4abbd6f?w=900",
+        image: "https://smytten-image.gumlet.io/shop_item/KTD004AA1001.jpg",
         description:
             "A comforting overnight face mask created as an occasional addition to a simple evening skincare routine.",
         ingredients:
@@ -276,7 +276,7 @@ const products = [
         name: "Nourishing Hand Cream",
         category: "Body Care",
         price: 349,
-        image: "https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=900",
+        image: "https://cdn.kindlife.in/images/detailed/57/8904320724887_3.png?t=1774177986",
         description:
             "A compact hand cream designed for everyday comfort and easy carry.",
         ingredients:
@@ -316,7 +316,7 @@ const products = [
         name: "Soft Tint Lip Balm",
         category: "Lip Care",
         price: 329,
-        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=900",
+        image: "https://images.meesho.com/images/products/989499719/duyhj_512.webp?width=512",
         description:
             "A soft tinted balm combining everyday lip care with a subtle natural-looking finish.",
         ingredients:
@@ -334,7 +334,7 @@ const products = [
         name: "Overnight Lip Mask",
         category: "Lip Care",
         price: 449,
-        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900",
+        image: "https://images.meesho.com/images/products/1010102817/dmcq3_512.webp?width=512",
         description:
             "A rich overnight lip treatment created for a comforting evening care ritual.",
         ingredients:
