@@ -1,12 +1,43 @@
+function getCurrentUserKey() {
+    const isLoggedIn =
+        localStorage.getItem("veloraLoggedIn") === "true";
+
+    if (!isLoggedIn) {
+        return null;
+    }
+
+    const user = JSON.parse(
+        localStorage.getItem("veloraUser")
+    );
+
+    if (!user?.email) {
+        return null;
+    }
+
+    return `veloraCart_${user.email.toLowerCase()}`;
+}
+
 export function getCart() {
+    const cartKey = getCurrentUserKey();
+
+    if (!cartKey) {
+        return [];
+    }
+
     return (
         JSON.parse(
-            localStorage.getItem("veloraCart")
+            localStorage.getItem(cartKey)
         ) || []
     );
 }
 
 export function addToCart(product, quantity = 1) {
+    const cartKey = getCurrentUserKey();
+
+    if (!cartKey) {
+        return;
+    }
+
     const cart = getCart();
 
     const existingItem = cart.find(
@@ -23,7 +54,7 @@ export function addToCart(product, quantity = 1) {
     }
 
     localStorage.setItem(
-        "veloraCart",
+        cartKey,
         JSON.stringify(cart)
     );
 
@@ -33,8 +64,14 @@ export function addToCart(product, quantity = 1) {
 }
 
 export function updateCart(cart) {
+    const cartKey = getCurrentUserKey();
+
+    if (!cartKey) {
+        return;
+    }
+
     localStorage.setItem(
-        "veloraCart",
+        cartKey,
         JSON.stringify(cart)
     );
 

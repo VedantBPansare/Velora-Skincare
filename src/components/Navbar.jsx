@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { getCart } from "../utils/cart";
 
 function Navbar() {
     const navigate = useNavigate();
@@ -18,9 +19,7 @@ function Navbar() {
 
         setUser(loggedIn ? savedUser : null);
 
-        const cart = JSON.parse(
-            localStorage.getItem("veloraCart")
-        ) || [];
+        const cart = getCart();
 
         const totalItems = cart.reduce(
             (total, item) => total + item.quantity,
